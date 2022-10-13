@@ -1,12 +1,19 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const SongDetail = (props) => {
-  console.log(props);
-  
+const SongDetail = ( { song }) => {
+  if (!song) {
+    return <div>Select a song</div> 
+  }
+
   return (
     <div>
-      SongDetail
+    <h3>Details for:</h3>
+    <p>
+      Title: {song.title}
+      <br />      
+      Duration: {song.duration}
+    </p>
     </div>
   )
 }
