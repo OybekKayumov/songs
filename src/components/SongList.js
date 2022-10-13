@@ -26,11 +26,7 @@ class SongList extends Component {
 
 
   render() {
-    // how to make use of the React Redux library to get data from Redux store into a React component
-    // this.props === { songs: state.songs }
-    // console.log('this.props: ', this.props);
     
-    // console.log(this.props);
     return (
       <div className="ui divided list">
         {this.renderList()}
@@ -40,8 +36,6 @@ class SongList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  // console.log('state: ', state);
-  // return state
 
   return { songs: state.songs }
 }

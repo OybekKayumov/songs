@@ -1,5 +1,4 @@
 import React from "react";
-import { selectedSong } from '../actions/index';
 import SongList from "./SongList";
 import SongDetail from "./SongDetail";
 import './App.css';
