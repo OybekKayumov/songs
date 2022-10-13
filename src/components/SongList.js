@@ -40,7 +40,7 @@ class SongList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log('state: ', state);
+  // console.log('state: ', state);
   // return state
 
   return { songs: state.songs }
