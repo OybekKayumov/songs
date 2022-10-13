@@ -3,7 +3,9 @@ import { connect } from "react-redux";
 
 class SongList extends Component {
   render() {
+    // how to make use of the React Redux library to get data from Redux store into a React component
     // this.props === { songs: state.songs }
+    console.log('this.props: ', this.props);
     return (
       <div>
         SongList
@@ -13,10 +15,10 @@ class SongList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log('state: ', state);
+  // console.log('state: ', state);
   // return state
 
-  return { songs: state.song }
+  return { songs: state.songs }
 }
 
 export default connect(mapStateToProps)(SongList);
